@@ -9,9 +9,32 @@
     background-color: #ff7f7f;
     height: 35px;
     float: left;
-    animation: rotation 8s infinite linear;
+    animation: movieLogo infinite 8s linear;
 }
 
 .buttonLogin{
     float: right;
+}
+.buttonBookShow{
+    float:  right;
+    margin-right: 16px;
+
+}
+
+@keyframes movieLogo {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+    
+}
+.modal{
+    top: 50%;
+    left:50%;
+    right:auto;
+    bottom:auto;
+    margin-right: '-50%';
+    transform: translate(50%, -50%)
 }
